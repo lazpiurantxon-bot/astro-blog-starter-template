@@ -1,5 +1,2 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
-export const SITE_TITLE = "Astro Blog";
-export const SITE_DESCRIPTION = "Welcome to my website!";
+export const SITE_TITLE = 'EZTI — Energía real. Ingredientes que reconoces.';
+export const SITE_DESCRIPTION = 'Gel energético natural a base de miel, sal y limón para deportistas de resistencia y outdoor. Fabricado y validado desde Euskadi.';
