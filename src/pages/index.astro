@@ -6,45 +6,1015 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+<html lang="es">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <div class="honey-drip" aria-hidden="true">
+          <svg viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
+            <rect x="0" y="0" width="240" height="14" fill="#C8922A" rx="2"/>
+            <rect x="22" y="14" width="11" height="78" fill="#C8922A" rx="5.5"/>
+            <ellipse cx="27.5" cy="98" rx="15" ry="17" fill="#C8922A"/>
+            <rect x="72" y="14" width="11" height="120" fill="#C8922A" rx="5.5"/>
+            <ellipse cx="77.5" cy="140" rx="15" ry="17" fill="#C8922A"/>
+            <rect x="118" y="14" width="11" height="58" fill="#C8922A" rx="5.5"/>
+            <ellipse cx="123.5" cy="78" rx="15" ry="17" fill="#C8922A"/>
+            <rect x="164" y="14" width="11" height="96" fill="#C8922A" rx="5.5"/>
+            <ellipse cx="169.5" cy="116" rx="15" ry="17" fill="#C8922A"/>
+            <rect x="210" y="14" width="11" height="42" fill="#C8922A" rx="5.5"/>
+            <ellipse cx="215.5" cy="62" rx="15" ry="17" fill="#C8922A"/>
+          </svg>
+        </div>
+
+        <h1 class="hero-wordmark">EZTI</h1>
+        <p class="hero-headline">MIEL, SAL Y LIMÓN PARA SEGUIR.</p>
+        <p class="hero-sub">Energía real. Ingredientes que reconoces.</p>
+        <div class="hero-ctas">
+          <a href="#formulario" class="btn btn-primary">Quiero probarlo</a>
+          <a href="#producto" class="btn btn-outline">Saber más</a>
+        </div>
+      </div>
+
+      <a href="#manifiesto" class="scroll-hint" aria-label="Seguir leyendo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 9L12 15L18 9" stroke="#C8922A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ===== MANIFIESTO ===== -->
+    <section class="manifiesto" id="manifiesto">
+      <div class="container">
+        <div class="manifesto-tag">Nada que ocultar. Nada que sobra.</div>
+        <div class="manifesto-body">
+          <p>No necesitas una fórmula imposible de pronunciar.</p>
+          <p>Necesitas energía que entiendas.</p>
+          <p class="manifesto-ingredients">Miel. Sal. Limón.</p>
+          <p>Nada más de lo necesario.</p>
+          <p class="manifesto-close">EZTI nace del terreno: subida, frío, barro, roca y cuerpo cuando pide verdad.<br/>
+          <strong>Energía real. Para seguir.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EL PRODUCTO ===== -->
+    <section class="producto" id="producto">
+      <div class="container">
+        <div class="section-label">El producto</div>
+        <h2 class="section-title">GEL ENERGÉTICO NATURAL</h2>
+        <p class="section-intro">
+          EZTI es un gel en formato sachet para deportistas de resistencia. Formulación mínima, ingredientes reconocibles, diseñado para consumir en movimiento sin parar ni masticar.
+        </p>
+
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="16" y="4" width="16" height="40" rx="4" fill="#C8922A" opacity="0.12" stroke="#C8922A" stroke-width="1.5"/>
+                <rect x="19" y="8" width="10" height="4" rx="1" fill="#C8922A"/>
+                <rect x="19" y="18" width="10" height="2" rx="1" fill="#C8922A" opacity="0.5"/>
+                <rect x="19" y="24" width="7" height="2" rx="1" fill="#C8922A" opacity="0.3"/>
+              </svg>
+            </div>
+            <h3>Formato sachet</h3>
+            <p>Ligero, portable, apertura rápida. Diseñado para usarse en carrera, bici o montaña sin perder el ritmo.</p>
+          </div>
+          <div class="product-card">
+            <div class="product-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="16" fill="#C8922A" opacity="0.12" stroke="#C8922A" stroke-width="1.5"/>
+                <path d="M17 24L21 28L31 18" stroke="#C8922A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Etiqueta limpia</h3>
+            <p>Tres ingredientes. Todos los que necesitas. Ninguno que te cueste pronunciar o que no sepas qué es.</p>
+          </div>
+          <div class="product-card">
+            <div class="product-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 6L10 18L10 38L38 38L38 18Z" stroke="#C8922A" stroke-width="1.5" fill="#C8922A" opacity="0.08" stroke-linejoin="round"/>
+                <path d="M18 38L18 28L30 28L30 38" stroke="#C8922A" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+                <path d="M20 22L24 18L28 22" stroke="#C8922A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Probado en terreno</h3>
+            <p>Desarrollado y validado con deportistas de montaña y resistencia en Gipuzkoa. Feedback real de uso real.</p>
+          </div>
+          <div class="product-card">
+            <div class="product-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8C16 8 10 16 10 24C10 32 16 40 24 40C32 40 38 32 38 24" stroke="#C8922A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M32 8L38 14L32 20" stroke="#C8922A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="24" cy="24" r="5" fill="#C8922A" opacity="0.3"/>
+              </svg>
+            </div>
+            <h3>Hecho desde Euskadi</h3>
+            <p>Miel, sal y limón de origen trazable. Un producto con raíz en el territorio donde se entrena y compite.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INGREDIENTES ===== -->
+    <section class="ingredientes" id="ingredientes">
+      <div class="container">
+        <div class="section-label" style="color: #C8922A;">Formulación</div>
+        <h2 class="section-title ing-title">TRES INGREDIENTES.<br/>MUCHO CRITERIO.</h2>
+
+        <div class="ing-grid">
+          <div class="ing-item">
+            <div class="ing-number">01</div>
+            <div class="ing-icon" aria-hidden="true">
+              <svg viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="0" width="50" height="8" rx="4" fill="#C8922A"/>
+                <rect x="20" y="8" width="8" height="46" rx="4" fill="#C8922A"/>
+                <ellipse cx="24" cy="58" rx="12" ry="14" fill="#C8922A"/>
+              </svg>
+            </div>
+            <h3>Miel</h3>
+            <p>Aporta glucosa y fructosa de forma natural — los mismos dos carbohidratos que los geles premium combinan artificialmente. Energía rápida y sostenida desde un ingrediente real y reconocible.</p>
+          </div>
+          <div class="ing-item">
+            <div class="ing-number">02</div>
+            <div class="ing-icon" aria-hidden="true">
+              <svg viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="40" r="28" fill="#C8922A" opacity="0.2" stroke="#C8922A" stroke-width="2"/>
+                <ellipse cx="30" cy="40" rx="14" ry="18" fill="#C8922A" opacity="0.5"/>
+                <path d="M22 40Q30 30 38 40Q30 50 22 40Z" fill="#C8922A"/>
+              </svg>
+            </div>
+            <h3>Limón</h3>
+            <p>Perfil sensorial ácido que equilibra el dulzor de la miel y facilita el consumo durante el esfuerzo. Contribuye al sabor en un momento de alta demanda sensorial.</p>
+          </div>
+          <div class="ing-item">
+            <div class="ing-number">03</div>
+            <div class="ing-icon" aria-hidden="true">
+              <svg viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="20" width="40" height="40" rx="4" fill="#C8922A" opacity="0.2" stroke="#C8922A" stroke-width="2"/>
+                <rect x="20" y="30" width="20" height="20" rx="2" fill="#C8922A" opacity="0.5"/>
+                <path d="M10 40L50 40" stroke="#C8922A" stroke-width="1.5"/>
+                <path d="M30 20L30 60" stroke="#C8922A" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3>Sal de Añana</h3>
+            <p>Sodio en el contexto del esfuerzo prolongado. La sal de manantial de Añana — un producto con identidad y trazabilidad propia del territorio vasco.</p>
+          </div>
+        </div>
+
+        <div class="ing-note">
+          <span class="ing-note-label">Sin cafeína</span>
+          <span class="ing-separator">·</span>
+          <span>Sin colorantes artificiales</span>
+          <span class="ing-separator">·</span>
+          <span>Sin conservantes sintéticos</span>
+          <span class="ing-separator">·</span>
+          <span>Sin aditivos innecesarios</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARA QUIÉN ===== -->
+    <section class="paraquien" id="paraquien">
+      <div class="container">
+        <div class="section-label">Para quién</div>
+        <h2 class="section-title">ENERGÍA LIMPIA<br/>PARA TERRENO SUCIO.</h2>
+        <p class="section-intro">
+          EZTI está pensado para quien entrena o compite en esfuerzos prolongados y quiere saber exactamente qué está tomando.
+        </p>
+
+        <div class="sports-grid">
+          <div class="sport-item">
+            <div class="sport-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="10" r="5" stroke="#C8922A" stroke-width="1.5" fill="none"/>
+                <path d="M24 20L20 42" stroke="#C8922A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M32 18L28 28L24 34" stroke="#C8922A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M30 24L38 30" stroke="#C8922A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M20 30L14 34" stroke="#C8922A" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Trail running</h3>
+            <p>Subidas, bajadas y largo recorrido. Un sachet cabe en el chaleco y se abre sin parar.</p>
+          </div>
+          <div class="sport-item">
+            <div class="sport-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="34" r="8" stroke="#C8922A" stroke-width="1.5" fill="none"/>
+                <circle cx="38" cy="34" r="8" stroke="#C8922A" stroke-width="1.5" fill="none"/>
+                <path d="M10 34L18 18L28 22L38 34" stroke="#C8922A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M28 22L32 14" stroke="#C8922A" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="32" cy="12" r="3" stroke="#C8922A" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <h3>Ciclismo</h3>
+            <p>Road o MTB. Un gel que se coge del bolsillo del maillot en marcha.</p>
+          </div>
+          <div class="sport-item">
+            <div class="sport-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 22Q24 10 40 22" stroke="#C8922A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <path d="M10 30Q24 18 38 30" stroke="#C8922A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <path d="M12 38Q24 26 36 38" stroke="#C8922A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <circle cx="24" cy="8" r="4" stroke="#C8922A" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <h3>Triatlón</h3>
+            <p>Transiciones y segmentos de bici donde necesitas un aporte rápido y tolerable.</p>
+          </div>
+          <div class="sport-item">
+            <div class="sport-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 6L40 26L32 26L32 42L16 42L16 26L8 26Z" stroke="#C8922A" stroke-width="1.5" fill="#C8922A" opacity="0.1" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Montaña</h3>
+            <p>Senderismo de largo recorrido, alpinismo o esquí de montaña. Energía de bolsillo.</p>
+          </div>
+          <div class="sport-item">
+            <div class="sport-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 38L20 10L28 24L34 18L42 38Z" stroke="#C8922A" stroke-width="1.5" fill="#C8922A" opacity="0.1" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Running asfalto</h3>
+            <p>Maratones, medios y cualquier sesión larga donde el cuerpo pide carbohidrato.</p>
+          </div>
+          <div class="sport-item sport-item--highlight">
+            <h3 class="highlight-text">"Nada que ocultar.<br/>Nada que sobra."</h3>
+            <p>Si lees la etiqueta y entiendes todo lo que pone, es EZTI.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMULARIO ===== -->
+    <section class="formulario" id="formulario">
+      <div class="container">
+        <div class="form-wrapper">
+          <div class="form-intro">
+            <div class="section-label" style="color: #C8922A;">Acceso anticipado</div>
+            <h2 class="section-title">QUIERO<br/>PROBAR EZTI.</h2>
+            <p>
+              Estamos en fase de validación con atletas. Si entrenas o compites en deportes de resistencia y quieres ser de los primeros en probar EZTI, déjanos tus datos.
+            </p>
+            <ul class="form-perks">
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" width="20" height="20"><path d="M4 10L8 14L16 6" stroke="#C8922A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Acceso prioritario al primer lote
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" width="20" height="20"><path d="M4 10L8 14L16 6" stroke="#C8922A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Muestra gratuita para testing real
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" width="20" height="20"><path d="M4 10L8 14L16 6" stroke="#C8922A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Tu feedback mejora el producto
+              </li>
+            </ul>
+          </div>
+
+          <div class="form-card">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="tu@email.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="deporte">Deporte principal</label>
+                <select id="deporte" name="deporte" required>
+                  <option value="" disabled selected>Elige tu deporte</option>
+                  <option value="trail">Trail running</option>
+                  <option value="ciclismo">Ciclismo (road / MTB)</option>
+                  <option value="triatlon">Triatlón</option>
+                  <option value="montana">Montaña / senderismo</option>
+                  <option value="maraton">Maratón / running en asfalto</option>
+                  <option value="otro">Otro deporte de resistencia</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="mensaje">¿Por qué quieres probar EZTI? <span class="label-optional">(opcional)</span></label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  rows="3"
+                  placeholder="Cuéntanos sobre tu entrenamiento o lo que buscas en un gel energético..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                <span class="btn-text">Quiero probar EZTI</span>
+                <span class="btn-loading" style="display:none">Enviando...</span>
+              </button>
+              <p class="form-privacy">
+                Tus datos solo se usarán para contactarte sobre el proceso de testing de EZTI. Sin spam.
+              </p>
+            </form>
+
+            <div class="form-success" id="form-success" style="display:none">
+              <div class="success-icon" aria-hidden="true">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                  <circle cx="30" cy="30" r="28" stroke="#C8922A" stroke-width="2"/>
+                  <path d="M18 30L26 38L42 22" stroke="#C8922A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3>¡Apuntado!</h3>
+              <p>Te avisaremos en cuanto tengamos unidades disponibles para testing. Energía real. Para seguir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+  </body>
 </html>
+
+<style>
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #080807;
+    padding: 80px 0 60px;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 120%, rgba(200, 146, 42, 0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 20% 50%, rgba(139, 58, 26, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .honey-drip {
+    width: 240px;
+    max-width: 60vw;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+  }
+
+  .hero-wordmark {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(5rem, 18vw, 13rem);
+    color: #EDE7D8;
+    letter-spacing: 0.06em;
+    line-height: 0.9;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-headline {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.1rem, 3.5vw, 1.9rem);
+    color: #C8922A;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 0 0 0.75rem;
+  }
+
+  .hero-sub {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1.05rem);
+    color: rgba(237, 231, 216, 0.55);
+    letter-spacing: 0.04em;
+    margin: 0 0 2.5rem;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2.5s ease-in-out infinite;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    display: flex;
+  }
+
+  .scroll-hint:hover {
+    opacity: 1;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
+  }
+
+  /* ===== BUTTONS ===== */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    padding: 0.85rem 2rem;
+    border-radius: 2px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    line-height: 1;
+  }
+
+  .btn-primary {
+    background: #C8922A;
+    color: #080807;
+    border-color: #C8922A;
+  }
+
+  .btn-primary:hover {
+    background: #EDE7D8;
+    border-color: #EDE7D8;
+    color: #080807;
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: #EDE7D8;
+    border-color: rgba(237, 231, 216, 0.3);
+  }
+
+  .btn-outline:hover {
+    border-color: #EDE7D8;
+    color: #EDE7D8;
+  }
+
+  .btn-full {
+    width: 100%;
+  }
+
+  .btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  /* ===== MANIFIESTO ===== */
+  .manifiesto {
+    background: #EDE7D8;
+    padding: 7rem 0;
+  }
+
+  .manifesto-tag {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #C8922A;
+    margin-bottom: 2.5rem;
+  }
+
+  .manifesto-body {
+    max-width: 700px;
+  }
+
+  .manifesto-body p {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1.05rem, 2.5vw, 1.4rem);
+    color: #5C5748;
+    line-height: 1.75;
+    margin-bottom: 0.75rem;
+  }
+
+  .manifesto-ingredients {
+    font-family: 'Barlow Condensed', sans-serif !important;
+    font-weight: 900 !important;
+    font-size: clamp(2rem, 5vw, 3.5rem) !important;
+    color: #080807 !important;
+    letter-spacing: 0.04em !important;
+    text-transform: uppercase !important;
+    margin: 1.25rem 0 !important;
+    line-height: 1 !important;
+  }
+
+  .manifesto-close {
+    margin-top: 1.5rem !important;
+    color: #080807 !important;
+  }
+
+  .manifesto-close strong {
+    color: #080807;
+  }
+
+  /* ===== SECCIONES COMUNES ===== */
+  .section-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #5C5748;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    color: #EDE7D8;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+  }
+
+  .section-intro {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: rgba(237, 231, 216, 0.6);
+    max-width: 580px;
+    line-height: 1.8;
+    margin-bottom: 3.5rem;
+  }
+
+  /* ===== PRODUCTO ===== */
+  .producto {
+    background: #080807;
+    padding: 7rem 0;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: rgba(92, 87, 72, 0.15);
+    border: 1px solid rgba(92, 87, 72, 0.15);
+  }
+
+  .product-card {
+    background: #080807;
+    padding: 2.5rem;
+    transition: background 0.25s;
+  }
+
+  .product-card:hover {
+    background: rgba(200, 146, 42, 0.04);
+  }
+
+  .product-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1.25rem;
+  }
+
+  .product-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.25rem;
+    color: #EDE7D8;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .product-card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    color: rgba(237, 231, 216, 0.5);
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  /* ===== INGREDIENTES ===== */
+  .ingredientes {
+    background: #EDE7D8;
+    padding: 7rem 0;
+  }
+
+  .ing-title {
+    color: #080807 !important;
+  }
+
+  .ing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .ing-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ing-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #C8922A;
+    letter-spacing: 0.15em;
+    margin-bottom: 1.5rem;
+  }
+
+  .ing-icon {
+    width: 60px;
+    height: 80px;
+    margin-bottom: 1.5rem;
+  }
+
+  .ing-item h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.75rem;
+    color: #080807;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .ing-item p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    color: #5C5748;
+    line-height: 1.8;
+    margin: 0;
+  }
+
+  .ing-note {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    background: rgba(8, 8, 7, 0.05);
+    border-left: 3px solid #C8922A;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: #5C5748;
+    letter-spacing: 0.03em;
+  }
+
+  .ing-note-label {
+    font-weight: 600;
+    color: #080807;
+  }
+
+  .ing-separator {
+    color: #C8922A;
+    font-weight: 700;
+  }
+
+  /* ===== PARA QUIÉN ===== */
+  .paraquien {
+    background: #121210;
+    padding: 7rem 0;
+  }
+
+  .sports-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(92, 87, 72, 0.12);
+    border: 1px solid rgba(92, 87, 72, 0.12);
+  }
+
+  .sport-item {
+    background: #121210;
+    padding: 2.5rem;
+    transition: background 0.25s;
+  }
+
+  .sport-item:hover {
+    background: rgba(200, 146, 42, 0.04);
+  }
+
+  .sport-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1.25rem;
+  }
+
+  .sport-item h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.2rem;
+    color: #EDE7D8;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .sport-item p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: rgba(237, 231, 216, 0.45);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .sport-item--highlight {
+    background: rgba(200, 146, 42, 0.05);
+    border: 1px solid rgba(200, 146, 42, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .highlight-text {
+    font-family: 'Barlow Condensed', sans-serif !important;
+    font-size: 1.45rem !important;
+    color: #C8922A !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.2 !important;
+    text-transform: uppercase !important;
+  }
+
+  /* ===== FORMULARIO ===== */
+  .formulario {
+    background: #080807;
+    padding: 7rem 0;
+    border-top: 1px solid rgba(200, 146, 42, 0.1);
+  }
+
+  .form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .form-intro .section-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-intro > p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92rem;
+    color: rgba(237, 231, 216, 0.55);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .form-perks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .form-perks li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    color: rgba(237, 231, 216, 0.65);
+  }
+
+  .form-card {
+    background: #121210;
+    border: 1px solid rgba(92, 87, 72, 0.2);
+    padding: 2.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5C5748;
+    margin-bottom: 0.5rem;
+  }
+
+  .label-optional {
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: rgba(92, 87, 72, 0.5);
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    background: #080807;
+    border: 1px solid rgba(92, 87, 72, 0.3);
+    color: #EDE7D8;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    border-radius: 2px;
+    transition: border-color 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+  }
+
+  .form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1L6 7L11 1' stroke='%235C5748' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-color: #080807;
+    padding-right: 2.5rem;
+    cursor: pointer;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #C8922A;
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: rgba(92, 87, 72, 0.45);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 90px;
+  }
+
+  .form-privacy {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    color: rgba(92, 87, 72, 0.55);
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 1.65;
+  }
+
+  .form-success {
+    text-align: center;
+    padding: 2.5rem 1rem;
+  }
+
+  .success-icon {
+    margin: 0 auto 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-success h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem;
+    color: #EDE7D8;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+  }
+
+  .form-success p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(237, 231, 216, 0.55);
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 960px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .ing-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .sports-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .form-wrapper {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .manifiesto,
+    .producto,
+    .ingredientes,
+    .paraquien,
+    .formulario {
+      padding: 5rem 0;
+    }
+
+    .sports-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .form-card {
+      padding: 1.75rem 1.25rem;
+    }
+
+    .hero-ctas {
+      flex-direction: column;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    .ing-grid {
+      gap: 2rem;
+    }
+  }
+</style>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const successEl = document.getElementById('form-success');
+  const submitBtn = document.getElementById('submit-btn');
+  const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+  const btnLoading = submitBtn ? submitBtn.querySelector('.btn-loading') : null;
+
+  if (form) {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      if (submitBtn) submitBtn.setAttribute('disabled', 'true');
+      if (btnText) btnText.style.display = 'none';
+      if (btnLoading) btnLoading.style.display = 'inline';
+
+      const data = new FormData(form);
+      const body = {};
+      data.forEach(function(value, key) { body[key] = value; });
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+        });
+
+        if (res.ok) {
+          form.style.display = 'none';
+          if (successEl) successEl.style.display = 'block';
+        } else {
+          throw new Error('Server error');
+        }
+      } catch (_) {
+        if (submitBtn) submitBtn.removeAttribute('disabled');
+        if (btnText) btnText.style.display = 'inline';
+        if (btnLoading) btnLoading.style.display = 'none';
+        alert('Ha ocurrido un error. Por favor inténtalo de nuevo.');
+      }
+    });
+  }
+</script>
