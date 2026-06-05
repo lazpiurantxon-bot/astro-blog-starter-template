@@ -83,17 +83,19 @@
   }
 
   .nav-cta {
-    background: #C8922A;
-    color: #080807 !important;
-    padding: 0.5rem 1.25rem;
+    background: transparent;
+    color: #EDE7D8 !important;
+    border: 1px solid rgba(237, 231, 216, 0.25);
+    padding: 0.45rem 1.2rem;
     border-radius: 2px;
     font-weight: 600 !important;
-    transition: background 0.2s !important;
+    transition: border-color 0.2s, background 0.2s !important;
   }
 
   .nav-cta:hover {
-    background: #EDE7D8 !important;
-    color: #080807 !important;
+    border-color: rgba(237, 231, 216, 0.55) !important;
+    background: rgba(237, 231, 216, 0.05) !important;
+    color: #EDE7D8 !important;
   }
 
   .nav-toggle {
