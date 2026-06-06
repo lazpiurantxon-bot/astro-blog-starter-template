@@ -53,41 +53,77 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
           <p>Necesitas energía que entiendas.</p>
           <p class="manifesto-ingredients">Miel. Sal. Limón.</p>
           <p>Nada más de lo necesario.</p>
-          <p class="manifesto-close">EZTI nace del terreno: subida, frío, barro, roca y cuerpo cuando pide verdad.<br/>
+          <p class="manifesto-close">EZTI nace de días largos y cuerpos al límite. De esfuerzo que no tiene hora de fin.<br/>
           <strong>Energía real. Para seguir.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDITORIAL STRIP ===== -->
+    <!-- FOTO: imagen filosófica de esfuerzo voluntario — reemplazar /blog-placeholder-1.jpg con foto real -->
+    <section class="editorial-strip">
+      <div class="editorial-photo-wrap">
+        <img
+          src="/blog-placeholder-1.jpg"
+          alt=""
+          aria-hidden="true"
+          class="editorial-photo"
+        />
+        <div class="editorial-overlay">
+          <blockquote class="editorial-quote">
+            Hecho para quien<br/>elige lo difícil.<br/>
+            <span>Y no lo hace por nadie más.</span>
+          </blockquote>
         </div>
       </div>
     </section>
 
     <!-- ===== EL PRODUCTO ===== -->
     <section class="producto" id="producto">
-      <div class="container">
-        <div class="section-label">El producto</div>
-        <h2 class="section-title">GEL ENERGÉTICO NATURAL</h2>
-        <p class="section-intro">
-          EZTI es un gel en formato sachet para deportistas de resistencia. Formulación mínima, ingredientes reconocibles, diseñado para consumir en movimiento sin parar ni masticar.
-        </p>
-
-        <div class="product-grid">
-          <div class="product-card">
-            <span class="product-num">01</span>
-            <h3>Formato sachet</h3>
-            <p>Ligero, portable, apertura rápida. Diseñado para usarse en carrera, bici o montaña sin perder el ritmo.</p>
-          </div>
-          <div class="product-card">
-            <span class="product-num">02</span>
-            <h3>Etiqueta limpia</h3>
-            <p>Tres ingredientes. Todos los que necesitas. Ninguno que te cueste pronunciar o que no sepas qué es.</p>
-          </div>
-          <div class="product-card">
-            <span class="product-num">03</span>
-            <h3>Probado en terreno</h3>
-            <p>Desarrollado y validado con deportistas de montaña y resistencia en Gipuzkoa. Feedback real de uso real.</p>
-          </div>
-          <div class="product-card">
-            <span class="product-num">04</span>
-            <h3>Hecho desde Euskadi</h3>
-            <p>Miel, sal y limón de origen trazable. Un producto con raíz en el territorio donde se entrena y compite.</p>
+      <div class="producto-split">
+        <!-- FOTO: sachet EZTI sobre superficie natural (roca, tierra, corteza) — reemplazar /blog-placeholder-2.jpg -->
+        <div class="producto-photo-panel">
+          <img
+            src="/blog-placeholder-2.jpg"
+            alt="EZTI — gel energético natural"
+            class="producto-photo"
+          />
+        </div>
+        <div class="producto-features">
+          <div class="section-label">El producto</div>
+          <h2 class="section-title">GEL ENERGÉTICO<br/>NATURAL</h2>
+          <p class="section-intro">
+            Formato sachet para quienes afrontan esfuerzos prolongados. Formulación mínima, ingredientes reconocibles, diseñado para consumir sin perder el ritmo.
+          </p>
+          <div class="product-list">
+            <div class="product-card">
+              <span class="product-num">01</span>
+              <div>
+                <h3>Formato sachet</h3>
+                <p>Ligero, portable, apertura rápida. Para usarse en movimiento sin perder el ritmo.</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <span class="product-num">02</span>
+              <div>
+                <h3>Etiqueta limpia</h3>
+                <p>Tres ingredientes. Todos los que necesitas. Ninguno que no sepas qué es.</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <span class="product-num">03</span>
+              <div>
+                <h3>Probado en terreno</h3>
+                <p>Desarrollado con personas que afrontan esfuerzos reales. Feedback de uso real.</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <span class="product-num">04</span>
+              <div>
+                <h3>Hecho desde Euskadi</h3>
+                <p>Miel, sal y limón de origen trazable. Un producto con raíz en el territorio.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -102,18 +138,21 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <div class="ing-grid">
           <div class="ing-item">
             <div class="ing-number">01</div>
+            <!-- FOTO opcional: macro miel — reemplazar con /ing-honey.jpg -->
             <h3>Miel</h3>
-            <p>Aporta glucosa y fructosa de forma natural — los mismos dos carbohidratos que los geles premium combinan artificialmente. Energía rápida y sostenida desde un ingrediente real y reconocible.</p>
+            <p>Aporta glucosa y fructosa de forma natural — los mismos dos carbohidratos que los geles premium combinan artificialmente. Energía rápida y sostenida desde un ingrediente real.</p>
           </div>
           <div class="ing-item">
             <div class="ing-number">02</div>
+            <!-- FOTO opcional: limón — reemplazar con /ing-lemon.jpg -->
             <h3>Limón</h3>
             <p>Perfil sensorial ácido que equilibra el dulzor de la miel y facilita el consumo durante el esfuerzo. Contribuye al sabor en un momento de alta demanda sensorial.</p>
           </div>
           <div class="ing-item">
             <div class="ing-number">03</div>
+            <!-- FOTO opcional: sal — reemplazar con /ing-salt.jpg -->
             <h3>Sal de Añana</h3>
-            <p>Sodio en el contexto del esfuerzo prolongado. La sal de manantial de Añana — un producto con identidad y trazabilidad propia del territorio vasco.</p>
+            <p>Sodio en el contexto del esfuerzo prolongado. La sal de manantial de Añana — identidad y trazabilidad propia del territorio vasco.</p>
           </div>
         </div>
 
@@ -129,57 +168,48 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       </div>
     </section>
 
-    <!-- ===== PARA QUIÉN ===== -->
+    <!-- ===== EL ESFUERZO ===== -->
     <section class="paraquien" id="paraquien">
-      <div class="container">
-        <div class="section-label">Para quién</div>
-        <h2 class="section-title">ENERGÍA LIMPIA<br/>PARA TERRENO SUCIO.</h2>
-        <p class="section-intro">
-          EZTI está pensado para quien entrena o compite en esfuerzos prolongados y quiere saber exactamente qué está tomando.
-        </p>
+      <div class="paraquien-grid">
+        <div class="paraquien-moments">
+          <div class="paraquien-moments-inner">
+            <div class="section-label">El esfuerzo</div>
+            <h2 class="section-title">NO ES PARA<br/>UN DEPORTE.<br/>ES PARA<br/>UN ESFUERZO.</h2>
 
-        <div class="sports-list">
-          <div class="sport-row sport-row--lead">
-            <span class="sport-num">01</span>
-            <div class="sport-body">
-              <h3>Trail running</h3>
-              <p>Subidas, bajadas y largo recorrido. Un sachet cabe en el chaleco y se abre sin parar.</p>
+            <div class="moments-list">
+              <div class="moment-row">
+                <span class="moment-num">01</span>
+                <p>Cuando llevas horas en movimiento y aún queda recorrido.</p>
+              </div>
+              <div class="moment-row">
+                <span class="moment-num">02</span>
+                <p>La sesión que dura más de lo que esperabas.</p>
+              </div>
+              <div class="moment-row">
+                <span class="moment-num">03</span>
+                <p>El momento en que el cuerpo pide parar y decides seguir.</p>
+              </div>
+              <div class="moment-row">
+                <span class="moment-num">04</span>
+                <p>Trabajo físico que empieza temprano y no para.</p>
+              </div>
+              <div class="moment-row">
+                <span class="moment-num">05</span>
+                <p>Cualquier objetivo que exige sostener el esfuerzo durante horas.</p>
+              </div>
             </div>
+
+            <p class="moments-close">Si tu esfuerzo merece respeto,<br/>tu energía también.</p>
           </div>
-          <div class="sport-row">
-            <span class="sport-num">02</span>
-            <div class="sport-body">
-              <h3>Ciclismo</h3>
-              <p>Road o MTB. Un gel que se coge del bolsillo del maillot en marcha.</p>
-            </div>
-          </div>
-          <div class="sport-row">
-            <span class="sport-num">03</span>
-            <div class="sport-body">
-              <h3>Triatlón</h3>
-              <p>Transiciones y segmentos de bici donde necesitas un aporte rápido y tolerable.</p>
-            </div>
-          </div>
-          <div class="sport-row">
-            <span class="sport-num">04</span>
-            <div class="sport-body">
-              <h3>Montaña</h3>
-              <p>Senderismo de largo recorrido, alpinismo o esquí de montaña. Energía de bolsillo.</p>
-            </div>
-          </div>
-          <div class="sport-row">
-            <span class="sport-num">05</span>
-            <div class="sport-body">
-              <h3>Running en asfalto</h3>
-              <p>Maratones, medios y cualquier sesión larga donde el cuerpo pide carbohidrato.</p>
-            </div>
-          </div>
-          <div class="sport-row sport-row--close">
-            <span class="sport-num"></span>
-            <div class="sport-body">
-              <p class="sport-close">"Nada que ocultar. Nada que sobra."<br/><span>Si lees la etiqueta y entiendes todo lo que pone, es EZTI.</span></p>
-            </div>
-          </div>
+        </div>
+
+        <!-- FOTO: terreno, movimiento, esfuerzo — reemplazar /blog-placeholder-3.jpg con foto real -->
+        <div class="paraquien-photo-panel" aria-hidden="true">
+          <img
+            src="/blog-placeholder-3.jpg"
+            alt=""
+            class="paraquien-photo"
+          />
         </div>
       </div>
     </section>
@@ -192,7 +222,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             <div class="section-label" style="color: #C8922A;">Acceso anticipado</div>
             <h2 class="section-title">QUIERO<br/>PROBAR EZTI.</h2>
             <p>
-              Estamos en fase de validación con atletas. Si entrenas o compites en deportes de resistencia y quieres ser de los primeros en probar EZTI, déjanos tus datos.
+              Estamos en fase de validación. Si afrontas esfuerzos prolongados con regularidad y quieres ser de los primeros en probar EZTI, déjanos tus datos.
             </p>
             <ul class="form-perks">
               <li>
@@ -236,15 +266,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
                 />
               </div>
               <div class="form-group">
-                <label for="deporte">Deporte principal</label>
+                <label for="deporte">Contexto de esfuerzo</label>
                 <select id="deporte" name="deporte" required>
-                  <option value="" disabled selected>Elige tu deporte</option>
-                  <option value="trail">Trail running</option>
-                  <option value="ciclismo">Ciclismo (road / MTB)</option>
-                  <option value="triatlon">Triatlón</option>
-                  <option value="montana">Montaña / senderismo</option>
-                  <option value="maraton">Maratón / running en asfalto</option>
-                  <option value="otro">Otro deporte de resistencia</option>
+                  <option value="" disabled selected>¿Cuál es tu entorno?</option>
+                  <option value="montana">Montaña y outdoor</option>
+                  <option value="resistencia">Resistencia (ciclismo, triatlón, natación)</option>
+                  <option value="running">Running (trail o asfalto)</option>
+                  <option value="funcional">CrossFit, Hyrox o funcional</option>
+                  <option value="combate">Deportes de combate</option>
+                  <option value="trabajo">Trabajo físico exigente</option>
+                  <option value="otro">Otro esfuerzo sostenido</option>
                 </select>
               </div>
               <div class="form-group">
@@ -253,7 +284,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
                   id="mensaje"
                   name="mensaje"
                   rows="3"
-                  placeholder="Cuéntanos sobre tu entrenamiento o lo que buscas en un gel energético..."
+                  placeholder="Cuéntanos sobre tu entrenamiento o lo que buscas..."
                 ></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
@@ -370,9 +401,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     display: flex;
   }
 
-  .scroll-hint:hover {
-    opacity: 1;
-  }
+  .scroll-hint:hover { opacity: 1; }
 
   @keyframes bounce {
     0%, 100% { transform: translateX(-50%) translateY(0); }
@@ -422,14 +451,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     color: #EDE7D8;
   }
 
-  .btn-full {
-    width: 100%;
-  }
-
-  .btn:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-  }
+  .btn-full { width: 100%; }
+  .btn:disabled { opacity: 0.6; cursor: not-allowed; }
 
   /* ===== MANIFIESTO ===== */
   .manifiesto {
@@ -447,9 +470,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     margin-bottom: 3rem;
   }
 
-  .manifesto-body {
-    max-width: 680px;
-  }
+  .manifesto-body { max-width: 680px; }
 
   .manifesto-body p {
     font-family: 'Inter', sans-serif;
@@ -481,6 +502,66 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     font-weight: 700;
   }
 
+  /* ===== EDITORIAL STRIP ===== */
+  .editorial-strip {
+    position: relative;
+    height: 72vh;
+    min-height: 420px;
+    overflow: hidden;
+  }
+
+  .editorial-photo-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .editorial-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    display: block;
+  }
+
+  .editorial-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(8, 8, 7, 0.82) 0%,
+      rgba(8, 8, 7, 0.35) 50%,
+      rgba(8, 8, 7, 0.15) 100%
+    );
+    display: flex;
+    align-items: flex-end;
+    padding: 4rem;
+  }
+
+  .editorial-quote {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
+    color: #EDE7D8;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: 1.05;
+    margin: 0;
+    max-width: 820px;
+  }
+
+  .editorial-quote span {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    color: rgba(237, 231, 216, 0.55);
+    margin-top: 1.25rem;
+    line-height: 1.6;
+  }
+
   /* ===== SECCIONES COMUNES ===== */
   .section-label {
     font-family: 'Inter', sans-serif;
@@ -505,60 +586,81 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     color: rgba(237, 231, 216, 0.6);
-    max-width: 580px;
+    max-width: 480px;
     line-height: 1.8;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
   }
 
-  /* ===== PRODUCTO ===== */
+  /* ===== PRODUCTO — split layout ===== */
   .producto {
     background: #080807;
-    padding: 7rem 0;
   }
 
-  .product-grid {
+  .producto-split {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    min-height: 75vh;
+  }
+
+  .producto-photo-panel {
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+  }
+
+  .producto-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .producto-features {
+    padding: 5rem 4rem 5rem 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .product-list {
+    display: flex;
+    flex-direction: column;
     border-top: 1px solid rgba(92, 87, 72, 0.2);
   }
 
   .product-card {
-    background: #080807;
-    padding: 2.5rem 3rem 2.5rem 0;
-    border-bottom: 1px solid rgba(92, 87, 72, 0.15);
-    border-right: 1px solid rgba(92, 87, 72, 0.12);
-  }
-
-  .product-card:nth-child(even) {
-    padding-left: 2.5rem;
-    padding-right: 0;
-    border-right: none;
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: 1rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(92, 87, 72, 0.12);
+    align-items: start;
   }
 
   .product-num {
-    display: block;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
     font-size: 0.72rem;
     color: rgba(92, 87, 72, 0.55);
     letter-spacing: 0.2em;
-    margin-bottom: 1.5rem;
+    padding-top: 0.25rem;
   }
 
   .product-card h3 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.45rem;
+    font-size: 1.3rem;
     color: #EDE7D8;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.35rem;
     text-transform: uppercase;
     letter-spacing: 0.06em;
   }
 
   .product-card p {
     font-family: 'Inter', sans-serif;
-    font-size: 0.88rem;
-    color: rgba(237, 231, 216, 0.5);
-    line-height: 1.8;
+    font-size: 0.85rem;
+    color: rgba(237, 231, 216, 0.45);
+    line-height: 1.7;
     margin: 0;
   }
 
@@ -568,9 +670,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     padding: 7rem 0;
   }
 
-  .ing-title {
-    color: #080807 !important;
-  }
+  .ing-title { color: #080807 !important; }
 
   .ing-grid {
     display: grid;
@@ -579,10 +679,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     margin-bottom: 4rem;
   }
 
-  .ing-item {
-    display: flex;
-    flex-direction: column;
-  }
+  .ing-item { display: flex; flex-direction: column; }
 
   .ing-number {
     font-family: 'Barlow Condensed', sans-serif;
@@ -631,91 +728,87 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     font-weight: 300;
   }
 
-  /* ===== PARA QUIÉN ===== */
+  /* ===== EL ESFUERZO — grid con foto ===== */
   .paraquien {
     background: #121210;
+  }
+
+  .paraquien-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 80vh;
+  }
+
+  .paraquien-moments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 7rem 0;
   }
 
-  .sports-list {
+  .paraquien-moments-inner {
+    max-width: 1100px;
+    padding: 0 4rem 0 2rem;
+    margin-left: auto;
+    /* aligns content to right within left column */
+    width: 100%;
+  }
+
+  .moments-list {
     display: flex;
     flex-direction: column;
     border-top: 1px solid rgba(92, 87, 72, 0.2);
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
   }
 
-  .sport-row {
+  .moment-row {
     display: grid;
     grid-template-columns: 3.5rem 1fr;
-    gap: 2rem;
-    padding: 2rem 0;
-    border-bottom: 1px solid rgba(92, 87, 72, 0.15);
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(92, 87, 72, 0.12);
     align-items: start;
   }
 
-  .sport-row--lead {
-    padding: 2.5rem 0 2rem;
-  }
-
-  .sport-row--lead .sport-body h3 {
-    font-size: 2.2rem;
-  }
-
-  .sport-row--close {
-    border-bottom: none;
-    padding-top: 2.5rem;
-  }
-
-  .sport-num {
+  .moment-num {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
     font-size: 0.72rem;
     color: rgba(92, 87, 72, 0.45);
     letter-spacing: 0.18em;
-    padding-top: 0.35rem;
+    padding-top: 0.3rem;
   }
 
-  .sport-body {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
+  .moment-row p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: rgba(237, 231, 216, 0.6);
+    line-height: 1.65;
+    margin: 0;
   }
 
-  .sport-body h3 {
+  .moments-close {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.5rem;
-    color: #EDE7D8;
-    text-transform: uppercase;
+    font-size: clamp(1.2rem, 2vw, 1.55rem);
+    color: rgba(237, 231, 216, 0.3);
     letter-spacing: 0.06em;
+    text-transform: uppercase;
+    line-height: 1.3;
     margin: 0;
   }
 
-  .sport-body p {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.87rem;
-    color: rgba(237, 231, 216, 0.45);
-    line-height: 1.7;
-    margin: 0;
+  .paraquien-photo-panel {
+    position: relative;
+    overflow: hidden;
   }
 
-  .sport-close {
-    font-family: 'Barlow Condensed', sans-serif !important;
-    font-size: 1.6rem !important;
-    color: rgba(237, 231, 216, 0.28) !important;
-    letter-spacing: 0.04em !important;
-    line-height: 1.25 !important;
-    text-transform: uppercase !important;
-    margin: 0 !important;
-  }
-
-  .sport-close span {
+  .paraquien-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     display: block;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.84rem;
-    color: rgba(237, 231, 216, 0.25);
-    letter-spacing: 0;
-    text-transform: none;
-    font-weight: 400;
-    margin-top: 0.6rem;
   }
 
   /* ===== FORMULARIO ===== */
@@ -732,9 +825,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     align-items: start;
   }
 
-  .form-intro .section-title {
-    margin-bottom: 1.5rem;
-  }
+  .form-intro .section-title { margin-bottom: 1.5rem; }
 
   .form-intro > p {
     font-family: 'Inter', sans-serif;
@@ -780,9 +871,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     border-bottom: 1px solid rgba(92, 87, 72, 0.15);
   }
 
-  .form-group {
-    margin-bottom: 1.5rem;
-  }
+  .form-group { margin-bottom: 1.5rem; }
 
   .form-group label {
     display: block;
@@ -884,17 +973,35 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
   /* ===== RESPONSIVE ===== */
   @media (max-width: 960px) {
-    .product-grid {
+    .producto-split {
       grid-template-columns: 1fr;
     }
 
-    .product-card {
-      padding: 2rem 0;
-      border-right: none;
+    .producto-photo-panel {
+      height: 55vw;
+      min-height: 280px;
     }
 
-    .product-card:nth-child(even) {
-      padding-left: 0;
+    .producto-features {
+      padding: 4rem 2rem;
+    }
+
+    .paraquien-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .paraquien-photo-panel {
+      height: 55vw;
+      min-height: 280px;
+      order: -1;
+    }
+
+    .paraquien-moments {
+      padding: 5rem 0;
+    }
+
+    .paraquien-moments-inner {
+      padding: 0 2rem;
     }
 
     .ing-grid {
@@ -906,24 +1013,43 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       grid-template-columns: 1fr;
       gap: 3rem;
     }
+
+    .editorial-overlay {
+      padding: 2.5rem;
+    }
   }
 
   @media (max-width: 600px) {
     .manifiesto,
-    .producto,
     .ingredientes,
-    .paraquien,
     .formulario {
       padding: 5rem 0;
     }
 
-    .sport-row {
-      grid-template-columns: 2.5rem 1fr;
-      gap: 1.25rem;
+    .paraquien-moments {
+      padding: 4rem 0;
     }
 
-    .sport-row--lead .sport-body h3 {
-      font-size: 1.75rem;
+    .editorial-strip {
+      height: 60vh;
+      min-height: 320px;
+    }
+
+    .editorial-overlay {
+      padding: 2rem 1.25rem;
+    }
+
+    .producto-features {
+      padding: 3rem 1.25rem;
+    }
+
+    .paraquien-moments-inner {
+      padding: 0 1.25rem;
+    }
+
+    .moment-row {
+      grid-template-columns: 2.5rem 1fr;
+      gap: 1rem;
     }
 
     .form-card {
@@ -936,13 +1062,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       max-width: 300px;
     }
 
-    .btn {
-      width: 100%;
-    }
+    .btn { width: 100%; }
 
-    .ing-grid {
-      gap: 2rem;
-    }
+    .ing-grid { gap: 2rem; }
   }
 </style>
 
