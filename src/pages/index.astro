@@ -13,23 +13,121 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   <body>
     <Header />
 
+    <!-- ===== HONEY DRIP (decorative) ===== -->
+    <svg
+      class="ezti-honey-drip"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 105"
+      preserveAspectRatio="xMidYMin meet"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <defs>
+        <linearGradient id="honey-drip-gradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#D4A030" />
+          <stop offset="45%"  stop-color="#C8922A" />
+          <stop offset="100%" stop-color="#9A6A15" />
+        </linearGradient>
+      </defs>
+      <path
+        fill="url(#honey-drip-gradient)"
+        d="
+          M 0 0
+          L 1440 0
+          L 1440 20
+          Q 1418 20 1391 20
+          C 1391 20 1389 21 1387 25
+          C 1384 34 1381 55 1378 67
+          C 1376 74 1374 79 1372 81
+          C 1370 83 1368 83 1366 81
+          C 1364 79 1362 74 1360 67
+          C 1357 55 1354 33 1351 24
+          C 1349 21 1347 20 1345 20
+          Q 1310 19 1270 20
+          Q 1248 20 1225 20
+          C 1225 20 1222 21 1220 26
+          C 1217 37 1214 63 1211 77
+          C 1209 85 1207 91 1205 93
+          C 1203 95 1201 95 1199 93
+          C 1197 91 1195 85 1193 77
+          C 1190 63 1187 37 1184 26
+          C 1182 21 1180 20 1178 20
+          Q 1145 19 1115 20
+          Q 1094 20 1070 20
+          C 1070 20 1068 21 1066 25
+          C 1063 33 1061 52 1059 63
+          C 1057 70 1055 74 1053 76
+          C 1051 77 1049 77 1047 75
+          C 1045 73 1043 69 1041 62
+          C 1039 51 1037 33 1035 24
+          C 1033 21 1031 20 1029 20
+          Q 996 19 963 20
+          Q 940 20 910 20
+          C 910 20 907 21 905 27
+          C 902 38 899 66 896 79
+          C 894 87 892 92 890 94
+          C 888 96 886 96 884 94
+          C 882 92 880 87 878 79
+          C 875 66 872 38 869 27
+          C 867 21 865 20 863 20
+          Q 828 19 795 20
+          Q 773 20 748 20
+          C 748 20 746 21 744 25
+          C 741 34 739 54 737 65
+          C 735 72 733 77 731 78
+          C 729 79 727 79 725 77
+          C 723 75 721 70 719 63
+          C 717 52 715 33 713 24
+          C 711 21 709 20 707 20
+          Q 672 19 638 20
+          Q 616 20 593 20
+          C 593 20 590 21 588 27
+          C 585 38 582 67 579 81
+          C 577 89 575 94 573 96
+          C 571 98 569 98 567 96
+          C 565 94 563 89 561 81
+          C 558 67 555 38 552 27
+          C 550 21 548 20 546 20
+          Q 512 19 478 20
+          Q 456 20 430 20
+          C 430 20 428 21 426 26
+          C 423 36 421 58 419 70
+          C 417 77 415 82 413 83
+          C 411 85 409 84 407 82
+          C 405 80 403 75 401 68
+          C 399 56 397 35 395 26
+          C 393 21 391 20 389 20
+          Q 354 19 320 20
+          Q 298 20 262 20
+          C 262 20 259 21 257 27
+          C 254 38 251 65 248 78
+          C 246 86 244 91 242 93
+          C 240 95 238 95 236 93
+          C 234 91 232 86 230 78
+          C 227 65 224 38 221 27
+          C 219 21 217 20 215 20
+          Q 181 19 148 20
+          Q 126 20 100 20
+          C 100 20 98 21 96 25
+          C 93 33 91 52 89 62
+          C 87 69 85 73 83 74
+          C 81 75 79 75 77 73
+          C 75 71 73 67 71 60
+          C 69 49 67 31 65 23
+          C 63 20 61 19 59 20
+          Q 30 20 0 20
+          Z
+        "
+      />
+    </svg>
+
     <!-- ===== HERO ===== -->
     <section class="hero" id="hero">
       <div class="hero-bg"></div>
       <div class="container hero-content">
-        <div class="honey-drip" aria-hidden="true">
-          <svg viewBox="0 0 240 190" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
-            <path d="M0,0 L240,0 L240,12 Q200,17 160,11 Q120,5 80,14 Q40,19 0,12 Z" fill="#C8922A"/>
-            <path d="M20,12 C20,12 27,15 26,54 C25,74 29,89 27,104 C25,114 18,114 17,104 C14,91 18,71 17,51 C16,30 19,12 20,12 Z" fill="#C8922A"/>
-            <path d="M72,12 C72,12 80,16 79,74 C78,104 83,127 80,145 C78,157 71,157 69,145 C66,129 70,105 69,75 C68,45 71,12 72,12 Z" fill="#C8922A"/>
-            <path d="M120,12 C120,12 128,15 127,47 C126,61 130,75 128,87 C126,96 120,96 118,87 C116,75 119,59 118,45 C117,27 120,12 120,12 Z" fill="#C8922A"/>
-            <path d="M166,12 C166,12 174,16 173,67 C172,89 177,107 175,121 C173,131 167,131 165,121 C163,107 166,87 165,64 C164,39 165,12 166,12 Z" fill="#C8922A"/>
-            <path d="M210,12 C210,12 218,15 217,41 C216,54 220,65 218,74 C216,81 210,81 209,74 C207,64 210,51 209,39 C208,25 209,12 210,12 Z" fill="#C8922A"/>
-          </svg>
-        </div>
-
         <h1 class="hero-wordmark">EZTI</h1>
         <p class="hero-headline">MIEL, SAL Y LIMÓN PARA SEGUIR.</p>
+        <p class="hero-headline-eu">Ezti. Limoia. Gatza. Jarraitzeko.</p>
         <p class="hero-sub">Energía real. Ingredientes que reconoces.</p>
         <div class="hero-ctas">
           <a href="#formulario" class="btn btn-primary">Quiero probarlo</a>
@@ -119,7 +217,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
               <span class="product-num">04</span>
               <div>
                 <h3>Hecho desde Euskadi</h3>
-                <p>Miel, sal y limón de origen trazable. Un producto con raíz en el territorio.</p>
+                <p>Miel, sal y limón de origen trazable. Un producto con raíz en el territorio.<br/><em>Euskal Herrian egina.</em></p>
               </div>
             </div>
           </div>
@@ -142,7 +240,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             <div class="ing-number">01</div>
             <!-- FOTO opcional: macro miel — reemplazar con /ing-honey.jpg -->
             <h3>Miel</h3>
-            <p>Aporta glucosa y fructosa de forma natural — los mismos dos carbohidratos que los geles premium combinan artificialmente. Energía rápida y sostenida desde un ingrediente real.</p>
+            <p>Aporta glucosa y fructosa de forma intrínseca — los mismos dos azúcares que la mayoría de geles combinan en su formulación. Misma energía, ingrediente real. Energía desde un ingrediente real.</p>
           </div>
           <div class="ing-item">
             <div class="ing-number">02</div>
@@ -166,6 +264,58 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
           <span>Sin conservantes</span>
           <span class="ing-sep" aria-hidden="true">/</span>
           <span>Sin aditivos innecesarios</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRUEBA REAL ===== -->
+    <section class="prueba" id="prueba">
+      <div class="container">
+        <div class="section-label" style="color: #C8922A;">VALIDADO EN TERRENO REAL</div>
+        <h2 class="section-title prueba-title">No lo decimos nosotros.<br/>Lo dicen quienes lo usaron.</h2>
+
+        <div class="prueba-stats">
+          <div class="prueba-stat">
+            <span class="prueba-stat-number">~85</span>
+            <span class="prueba-stat-label">unidades probadas en esfuerzo real</span>
+          </div>
+          <div class="prueba-stat">
+            <span class="prueba-stat-number">0/8</span>
+            <span class="prueba-stat-label">molestias digestivas en panel controlado</span>
+          </div>
+          <div class="prueba-stat">
+            <span class="prueba-stat-number">2</span>
+            <span class="prueba-stat-label">atletas lo usaron en competición real sustituyendo su gel habitual</span>
+          </div>
+          <div class="prueba-stat">
+            <span class="prueba-stat-number">15-20</span>
+            <span class="prueba-stat-label">personas preguntaron dónde comprarlo en Zegama-Aizkorri sin que hubiera nada en venta</span>
+          </div>
+        </div>
+
+        <div class="prueba-quotes">
+          <blockquote class="prueba-quote">
+            <p>«Esto es comida. No sabe artificial.»</p>
+            <cite>— Tester, trail runner, panel controlado</cite>
+          </blockquote>
+          <blockquote class="prueba-quote">
+            <p>«Se nota que la miel es muy buena.»</p>
+            <cite>— Tester, ciclismo + running, 4 horas</cite>
+          </blockquote>
+          <blockquote class="prueba-quote">
+            <p>«Menos empalagoso de lo que esperaba.»</p>
+            <cite>— Tester, Zegama-Aizkorri</cite>
+          </blockquote>
+        </div>
+
+        <div class="prueba-science">
+          <div class="prueba-science-label">BASE CIENTÍFICA</div>
+          <p>Un estudio de 2025 en el International Journal of Sport Nutrition and Exercise Metabolism comparó la ingesta de miel frente a un producto comercial de carbohidratos durante 3 horas de ciclismo y no encontró diferencias relevantes en oxidación de carbohidratos ni en tiempo hasta la fatiga.</p>
+          <cite>Fortis et al. (2025). Int. J. Sport Nutr. Exerc. Metab., 35(5):424–432.</cite>
+        </div>
+
+        <div class="prueba-cta">
+          <a href="#formulario" class="btn btn-primary">Quiero ser tester</a>
         </div>
       </div>
     </section>
@@ -270,9 +420,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
                 <label for="deporte">Contexto de esfuerzo</label>
                 <select id="deporte" name="deporte" required>
                   <option value="" disabled selected>¿Cuál es tu entorno?</option>
-                  <option value="montana">Montaña y outdoor</option>
                   <option value="resistencia">Resistencia (ciclismo, triatlón, natación)</option>
                   <option value="running">Running (trail o asfalto)</option>
+                  <option value="montana">Montaña y outdoor</option>
                   <option value="funcional">CrossFit, Hyrox o funcional</option>
                   <option value="combate">Deportes de combate</option>
                   <option value="trabajo">Trabajo físico exigente</option>
@@ -349,11 +499,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     max-width: 860px;
   }
 
-  .honey-drip {
-    width: 200px;
-    max-width: 50vw;
-    margin-bottom: 2rem;
-    opacity: 0.95;
+  /* ===== HONEY DRIP SVG ===== */
+  .ezti-honey-drip {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 80px;
+    margin-bottom: -1px;
+    pointer-events: none;
+    user-select: none;
+    position: relative;
+    z-index: 99;
   }
 
   .hero-wordmark {
@@ -373,7 +529,18 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     color: #EDE7D8;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    margin: 0 0 0.25rem;
+  }
+
+  .hero-headline-eu {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: clamp(0.75rem, 2.3vw, 1.25rem);
+    color: #EDE7D8;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     margin: 0 0 0.75rem;
+    opacity: 0.55;
   }
 
   .hero-sub {
@@ -745,6 +912,116 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     font-weight: 300;
   }
 
+  /* ===== PRUEBA REAL ===== */
+  .prueba {
+    background: #121210;
+    padding: 7rem 0;
+    border-top: 1px solid rgba(200, 146, 42, 0.1);
+  }
+
+  .prueba-title {
+    color: #EDE7D8 !important;
+  }
+
+  .prueba-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+    margin: 3rem 0 4rem;
+  }
+
+  .prueba-stat {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(200, 146, 42, 0.2);
+  }
+
+  .prueba-stat-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    color: #C8922A;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+  }
+
+  .prueba-stat-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    color: rgba(237, 231, 216, 0.5);
+    line-height: 1.6;
+  }
+
+  .prueba-quotes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .prueba-quote {
+    background: rgba(200, 146, 42, 0.06);
+    border-left: 3px solid #C8922A;
+    padding: 1.75rem 1.5rem;
+    margin: 0;
+  }
+
+  .prueba-quote p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #EDE7D8;
+    line-height: 1.4;
+    margin: 0 0 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .prueba-quote cite {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 0.75rem;
+    color: rgba(237, 231, 216, 0.4);
+    letter-spacing: 0.04em;
+  }
+
+  .prueba-science {
+    background: rgba(8, 8, 7, 0.5);
+    border: 1px solid rgba(92, 87, 72, 0.2);
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .prueba-science-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #C8922A;
+    margin-bottom: 1rem;
+  }
+
+  .prueba-science p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: rgba(237, 231, 216, 0.55);
+    line-height: 1.8;
+    margin: 0 0 1rem;
+  }
+
+  .prueba-science cite {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-size: 0.78rem;
+    color: rgba(237, 231, 216, 0.35);
+  }
+
+  .prueba-cta {
+    text-align: center;
+  }
+
   /* ===== EL ESFUERZO — grid con foto ===== */
   .paraquien {
     background: #121210;
@@ -1034,12 +1311,22 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     .editorial-overlay {
       padding: 2.5rem;
     }
+
+    .prueba-stats {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    .prueba-quotes {
+      grid-template-columns: 1fr;
+    }
   }
 
   @media (max-width: 600px) {
     .manifiesto,
     .ingredientes,
-    .formulario {
+    .formulario,
+    .prueba {
       padding: 5rem 0;
     }
 
